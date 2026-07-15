@@ -46,7 +46,7 @@ export default function FreeTrialPage() {
               <h2 className="section-title section-underline text-navy">Request Your Free Pass</h2>
               <p className="mt-6 text-darkgray">
                 Complete the form below and a member of our team will reach out to set up your
-                3-day trial. Fields marked with <span className="text-accent">*</span> are required.
+                3-day trial. Fields marked with <span className="text-primary">*</span> are required.
               </p>
               <div className="mt-8">
                 <TrialForm />
@@ -59,7 +59,7 @@ export default function FreeTrialPage() {
             <div className="space-y-6">
               <div className="rounded-lg bg-navy p-8 text-white">
                 <h3 className="flex items-center gap-2 font-heading text-xl font-bold">
-                  <CalendarCheck className="h-6 w-6 text-accent" aria-hidden="true" /> What&apos;s Included
+                  <CalendarCheck className="h-6 w-6 text-primary" aria-hidden="true" /> What&apos;s Included
                 </h3>
                 <ul className="mt-5 space-y-3">
                   {included.map((item) => (

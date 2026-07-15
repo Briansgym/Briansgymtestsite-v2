@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container-x grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href="/" className="flex items-center gap-2 text-white" aria-label="Brian's Gym home">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-accent">
+            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-primary">
               <Dumbbell className="h-6 w-6" aria-hidden="true" />
             </span>
             <span className="font-heading text-xl font-extrabold">Brian&apos;s Gym</span>
@@ -25,7 +25,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Brian's Gym on Facebook"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-medium text-white transition-colors hover:bg-accent"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-medium text-white transition-colors hover:bg-primary"
             >
               <Facebook className="h-5 w-5" aria-hidden="true" />
             </a>
@@ -34,7 +34,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Brian's Gym on Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-medium text-white transition-colors hover:bg-accent"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-medium text-white transition-colors hover:bg-primary"
             >
               <Instagram className="h-5 w-5" aria-hidden="true" />
             </a>
@@ -43,7 +43,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Brian's Gym on YouTube"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-medium text-white transition-colors hover:bg-accent"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-medium text-white transition-colors hover:bg-primary"
             >
               <Youtube className="h-5 w-5" aria-hidden="true" />
             </a>
@@ -55,13 +55,13 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="transition-colors hover:text-accent">
+                <Link href={link.href} className="transition-colors hover:text-primary">
                   {link.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="/free-trial" className="transition-colors hover:text-accent">
+              <Link href="/free-trial" className="transition-colors hover:text-primary">
                 Free Trial
               </Link>
             </li>
@@ -72,7 +72,7 @@ export default function Footer() {
           <h2 className="font-heading text-lg font-bold text-white">Contact</h2>
           <ul className="mt-4 space-y-3 text-sm">
             <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
+              <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
               <span>
                 {SITE.address.street}
                 <br />
@@ -80,14 +80,14 @@ export default function Footer() {
               </span>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
-              <a href={SITE.phoneHref} className="hover:text-accent">
+              <Phone className="h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
+              <a href={SITE.phoneHref} className="hover:text-primary">
                 {SITE.phone}
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="h-5 w-5 flex-shrink-0 text-accent" aria-hidden="true" />
-              <a href={`mailto:${SITE.email}`} className="hover:text-accent">
+              <Mail className="h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
+              <a href={`mailto:${SITE.email}`} className="hover:text-primary">
                 {SITE.email}
               </a>
             </li>
@@ -96,7 +96,7 @@ export default function Footer() {
 
         <div>
           <h2 className="flex items-center gap-2 font-heading text-lg font-bold text-white">
-            <Clock className="h-5 w-5 text-accent" aria-hidden="true" /> Staffed Hours
+            <Clock className="h-5 w-5 text-primary" aria-hidden="true" /> Staffed Hours
           </h2>
           <ul className="mt-4 space-y-2 text-sm">
             {HOURS.map((h) => (

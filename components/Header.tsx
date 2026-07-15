@@ -46,7 +46,7 @@ export default function Header() {
           className="flex items-center gap-2 text-white"
           aria-label="Brian's Gym home"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-accent">
+          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-primary">
             <Dumbbell className="h-6 w-6" aria-hidden="true" />
           </span>
           <span className="font-heading text-xl font-extrabold tracking-tight">
@@ -64,8 +64,8 @@ export default function Header() {
                 aria-current={active ? 'page' : undefined}
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-150 ${
                   active
-                    ? 'text-accent'
-                    : 'text-white/90 hover:text-accent'
+                    ? 'text-primary-light'
+                    : 'text-white/90 hover:text-primary-light'
                 }`}
               >
                 {link.label}
@@ -77,7 +77,7 @@ export default function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={SITE.phoneHref}
-            className="flex items-center gap-2 text-sm font-semibold text-white/90 hover:text-accent"
+            className="flex items-center gap-2 text-sm font-semibold text-white/90 hover:text-primary-light"
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
             {SITE.phone}
@@ -115,7 +115,7 @@ export default function Header() {
                 href={link.href}
                 aria-current={active ? 'page' : undefined}
                 className={`rounded-md px-4 py-3 text-base font-semibold ${
-                  active ? 'bg-navy-medium text-accent' : 'text-white hover:bg-navy-light'
+                  active ? 'bg-navy-medium text-primary-light' : 'text-white hover:bg-navy-light'
                 }`}
               >
                 {link.label}

@@ -61,9 +61,10 @@ Darken the current palette for a premium energetic feel. Keep the same hue famil
 - `--color-text-light: #cbd5e1`
 
 ### Accent
-- Energy/CTA accent: `#e63946` (energetic red-orange — use for primary CTAs to stand out from blue)
+- Primary CTA: `#1e5a99` (darker blue — use for primary CTAs and interactive highlights)
+- Amber highlight: `#f59e0b` (stars, badges, "best value" highlights)
 - Success/green: `#10b981`
-- Warning: `#f59e0b`
+- Danger/error: `#ef4444` (errors only)
 
 ### Typography
 - Headings: Inter (weights 300-900)

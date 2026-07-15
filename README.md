@@ -45,7 +45,7 @@ Plus `not-found.tsx`, dynamic `sitemap.xml` (`app/sitemap.ts`) and `robots.txt` 
 
 Colors, spacing, radius, shadows, and transitions are defined in `tailwind.config.ts`
 and `app/globals.css` (CSS variables), matching the darker premium palette:
-primary `#1e5a99`, accent CTA `#e63946`, navy `#070f1d`.
+primary `#1e5a99`, primary-light `#2c79bf`, amber highlight `#f59e0b`, navy `#070f1d`.
 
 ## SEO & Accessibility
 

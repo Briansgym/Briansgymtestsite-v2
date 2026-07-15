@@ -123,7 +123,7 @@ export default function PersonalTrainingPage() {
                   <span className="absolute right-6 top-6 font-heading text-5xl font-black text-primary/30">
                     {i + 1}
                   </span>
-                  <span className="flex h-14 w-14 items-center justify-center rounded-md bg-accent/15 text-accent">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-md bg-primary/15 text-primary">
                     <s.icon className="h-7 w-7" aria-hidden="true" />
                   </span>
                   <h3 className="mt-5 font-heading text-xl font-bold text-white">{s.title}</h3>

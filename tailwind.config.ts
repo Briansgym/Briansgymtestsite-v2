@@ -9,28 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Palette = darkened versions of briansgym.com's real Avada palette
-        // (brand blue #2c79bf, navy #212934, gold/amber #c0830b).
-        // No invented accent colors — same hue family, deeper/premium feel.
+        // Corrected palette per COLOR_FIX.md: darker versions of the existing
+        // site blues/navy. No red-orange accent; amber/danger kept semantically.
         primary: {
-          DEFAULT: '#1e5a99', // darkened #2c79bf (brand blue)
-          light: '#2c79bf',   // real brand blue
-          dark: '#143d6b',    // darkened #105378 (deep blue)
+          DEFAULT: '#1e5a99',
+          light: '#2c79bf',
+          dark: '#143d6b',
         },
         navy: {
-          DEFAULT: '#1c232b', // darkened #212934 (real site navy)
-          light: '#262f39',
-          medium: '#303a45',
-          surface: '#171d24',
+          DEFAULT: '#070f1d',
+          light: '#0b1a30',
+          medium: '#102240',
+          surface: '#0c1424',
         },
-        accent: {
-          DEFAULT: '#ad750a', // darkened #c0830b (site gold/amber)
-          dark: '#94620a',    // darker gold for hover
-        },
-        offwhite: '#f6f6f6', // real site light bg #f6f6f6
-        lightgray: '#ebeaea', // real site #ebeaea
-        mediumgray: '#747474', // real site #747474
-        darkgray: '#4a4e57',   // darkened #434c50
+        offwhite: '#f0f4f8',
+        lightgray: '#e2e8f0',
+        mediumgray: '#94a3b8',
+        darkgray: '#475569',
         ink: '#1e293b',
         textlight: '#cbd5e1',
         success: '#10b981',

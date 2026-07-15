@@ -138,7 +138,7 @@ export default function HomePage() {
               <span className="eyebrow">{SITE.tagline}</span>
               <h1 className="font-heading text-4xl font-black leading-[1.05] text-white sm:text-5xl lg:text-7xl">
                 Sedalia&apos;s Largest,{' '}
-                <span className="text-accent">Most Complete</span> Fitness Facility
+                <span className="text-primary-light">Most Complete</span> Fitness Facility
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-textlight md:text-xl">
                 26,000 square feet of premium equipment, 24-hour access, Kid Zone childcare,
@@ -243,12 +243,12 @@ export default function HomePage() {
             {programs.map((p, i) => (
               <Reveal key={p.title} delay={i * 100}>
                 <Link href={p.href} className="card group flex h-full flex-col p-8">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-md bg-accent/10 text-accent">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-md bg-primary/10 text-primary">
                     <p.icon className="h-7 w-7" aria-hidden="true" />
                   </span>
                   <h3 className="mt-5 font-heading text-xl font-bold text-navy">{p.title}</h3>
                   <p className="mt-3 flex-1 leading-relaxed text-darkgray">{p.text}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-primary group-hover:text-accent">
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-primary group-hover:text-primary-dark">
                     Learn More <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </span>
                 </Link>
@@ -380,7 +380,7 @@ export default function HomePage() {
               I&apos;ve been a member for years and wouldn&apos;t go anywhere else. It&apos;s like a
               second family!&rdquo;
             </blockquote>
-            <cite className="mt-6 block text-lg font-bold not-italic text-accent">
+            <cite className="mt-6 block text-lg font-bold not-italic text-primary">
               — Janette S. Morgan, Member
             </cite>
           </Reveal>

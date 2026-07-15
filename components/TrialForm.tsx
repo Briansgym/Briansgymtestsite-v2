@@ -58,7 +58,7 @@ export default function TrialForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="firstName" className="mb-1.5 block text-sm font-semibold text-navy">
-            First Name <span className="text-accent">*</span>
+            First Name <span className="text-primary">*</span>
           </label>
           <input
             id="firstName"
@@ -71,7 +71,7 @@ export default function TrialForm() {
         </div>
         <div>
           <label htmlFor="lastName" className="mb-1.5 block text-sm font-semibold text-navy">
-            Last Name <span className="text-accent">*</span>
+            Last Name <span className="text-primary">*</span>
           </label>
           <input
             id="lastName"
@@ -87,7 +87,7 @@ export default function TrialForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-navy">
-            Email <span className="text-accent">*</span>
+            Email <span className="text-primary">*</span>
           </label>
           <input
             id="email"
@@ -100,7 +100,7 @@ export default function TrialForm() {
         </div>
         <div>
           <label htmlFor="phone" className="mb-1.5 block text-sm font-semibold text-navy">
-            Phone <span className="text-accent">*</span>
+            Phone <span className="text-primary">*</span>
           </label>
           <input
             id="phone"
@@ -148,7 +148,7 @@ export default function TrialForm() {
       </div>
 
       {status === 'error' ? (
-        <p className="rounded-md bg-accent/10 px-4 py-3 text-sm font-semibold text-accent" role="alert">
+        <p className="rounded-md bg-danger/10 px-4 py-3 text-sm font-semibold text-danger" role="alert">
           Something went wrong. Please try again or call us at {SITE.phone}.
         </p>
       ) : null}

@@ -127,7 +127,7 @@ export default function AboutPage() {
             {audiences.map((a, i) => (
               <Reveal key={a.title} delay={i * 80}>
                 <div className="h-full rounded-lg border border-lightgray p-6">
-                  <Users className="h-8 w-8 text-accent" aria-hidden="true" />
+                  <Users className="h-8 w-8 text-primary" aria-hidden="true" />
                   <h3 className="mt-4 font-heading text-lg font-bold text-navy">{a.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-darkgray">{a.text}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
       <section className="bg-navy py-16">
         <div className="container-x">
           <Reveal className="flex flex-col items-center gap-4 text-center">
-            <MapPin className="h-8 w-8 text-accent" aria-hidden="true" />
+            <MapPin className="h-8 w-8 text-primary" aria-hidden="true" />
             <p className="font-heading text-2xl font-bold text-white">
               {SITE.address.street}, {SITE.address.city}, {SITE.address.state} {SITE.address.zip}
             </p>

@@ -70,7 +70,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-navy">
-            Email <span className="text-accent">*</span>
+            Email <span className="text-primary">*</span>
           </label>
           <input
             id="email"
@@ -120,7 +120,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="mb-1.5 block text-sm font-semibold text-navy">
-          Message <span className="text-accent">*</span>
+          Message <span className="text-primary">*</span>
         </label>
         <textarea
           id="message"

@@ -92,14 +92,14 @@ export default function ProgramsPage() {
             {programs.map((p, i) => (
               <Reveal key={p.title} delay={i * 100}>
                 <div className="card flex h-full flex-col p-8">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-md bg-accent/10 text-accent">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-md bg-primary/10 text-primary">
                     <p.icon className="h-7 w-7" aria-hidden="true" />
                   </span>
                   <h3 className="mt-5 font-heading text-xl font-bold text-navy">{p.title}</h3>
                   <p className="mt-3 flex-1 leading-relaxed text-darkgray">{p.text}</p>
                   <Link
                     href={p.href}
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-primary hover:text-accent"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-primary hover:text-primary-dark"
                   >
                     {p.cta} <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
