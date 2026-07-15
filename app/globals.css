@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1e5a99;
+  --color-primary-light: #2c79bf;
+  --color-primary-dark: #143d6b;
+  --color-primary-glow: rgba(30, 90, 153, 0.35);
+
+  --color-navy: #070f1d;
+  --color-navy-light: #0b1a30;
+  --color-navy-medium: #102240;
+  --color-dark-surface: #0c1424;
+
+  --color-accent: #e63946;
+  --color-accent-dark: #c92b38;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-white font-body text-ink antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
+}
+
+/* Focus visibility for accessibility */
+*:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-content px-6 md:px-8;
+  }
+
+  /* Pill-shaped buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-3.5 text-sm font-bold uppercase tracking-[0.08em] transition-all duration-[250ms] ease-smooth;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent text-white shadow-md hover:bg-accent-dark hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply btn bg-primary text-white shadow-md hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-white text-white hover:bg-white hover:text-navy;
+  }
+
+  .btn-ghost {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  /* Section header with gradient underline */
+  .section-title {
+    @apply font-heading text-3xl font-extrabold leading-tight md:text-4xl;
+  }
+
+  .section-underline::after {
+    content: '';
+    @apply mt-4 block h-1 w-[60px] rounded-full;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  }
+
+  .section-underline-center::after {
+    content: '';
+    @apply mx-auto mt-4 block h-1 w-[60px] rounded-full;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  }
+
+  .eyebrow {
+    @apply mb-3 inline-block text-sm font-bold uppercase tracking-[0.15em] text-accent;
+  }
+
+  /* Card with gradient top bar on hover */
+  .card {
+    @apply relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-[400ms] ease-smooth;
+  }
+
+  .card::before {
+    content: '';
+    @apply absolute left-0 right-0 top-0 h-1 origin-left scale-x-0 transition-transform duration-[400ms] ease-smooth;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  }
+
+  .card:hover {
+    @apply -translate-y-1.5 shadow-xl;
+  }
+
+  .card:hover::before {
+    @apply scale-x-100;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(90deg, var(--color-primary-light), #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}

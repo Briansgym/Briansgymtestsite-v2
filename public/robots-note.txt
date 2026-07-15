@@ -1,0 +1,2 @@
+This directory holds static assets. robots.txt and sitemap.xml are generated
+dynamically by Next.js from app/robots.ts and app/sitemap.ts.
