@@ -107,7 +107,7 @@ export default function PhotoTour() {
               onClick={() => setActive(cat.id)}
               className={`rounded-full px-6 py-2.5 text-sm font-bold uppercase tracking-[0.06em] transition-all duration-[250ms] ${
                 selected
-                  ? 'bg-accent text-white shadow-md'
+                  ? 'bg-primary text-white shadow-md'
                   : 'bg-white text-darkgray shadow-sm hover:bg-lightgray'
               }`}
             >

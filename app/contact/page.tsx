@@ -75,7 +75,7 @@ export default function ContactPage() {
                   </span>
                   <span>
                     <span className="block font-bold text-navy">Phone</span>
-                    <a href={SITE.phoneHref} className="hover:text-accent">
+                    <a href={SITE.phoneHref} className="hover:text-primary">
                       {SITE.phone}
                     </a>
                   </span>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   </span>
                   <span>
                     <span className="block font-bold text-navy">Email</span>
-                    <a href={`mailto:${SITE.email}`} className="hover:text-accent">
+                    <a href={`mailto:${SITE.email}`} className="hover:text-primary">
                       {SITE.email}
                     </a>
                   </span>
@@ -117,7 +117,7 @@ export default function ContactPage() {
             <div className="rounded-lg bg-offwhite p-8 shadow-md md:p-10">
               <h2 className="font-heading text-2xl font-bold text-navy">Send Us a Message</h2>
               <p className="mt-2 text-darkgray">
-                Fields marked with <span className="text-accent">*</span> are required.
+                Fields marked with <span className="text-primary">*</span> are required.
               </p>
               <div className="mt-8">
                 <ContactForm />

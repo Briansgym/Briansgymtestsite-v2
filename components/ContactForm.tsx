@@ -57,7 +57,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-navy">
-            Name <span className="text-accent">*</span>
+            Name <span className="text-primary">*</span>
           </label>
           <input
             id="name"
@@ -132,7 +132,7 @@ export default function ContactForm() {
       </div>
 
       {status === 'error' ? (
-        <p className="rounded-md bg-accent/10 px-4 py-3 text-sm font-semibold text-accent" role="alert">
+        <p className="rounded-md bg-danger/10 px-4 py-3 text-sm font-semibold text-danger" role="alert">
           Something went wrong. Please try again or call us at {SITE.phone}.
         </p>
       ) : null}

@@ -9,29 +9,36 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Palette = darkened versions of briansgym.com's real Avada palette
+        // (brand blue #2c79bf, navy #212934, gold/amber #c0830b).
+        // No invented accent colors — same hue family, deeper/premium feel.
         primary: {
-          DEFAULT: '#1e5a99',
-          light: '#2c79bf',
-          dark: '#143d6b',
+          DEFAULT: '#1e5a99', // darkened #2c79bf (brand blue)
+          light: '#2c79bf',   // real brand blue
+          dark: '#143d6b',    // darkened #105378 (deep blue)
         },
         navy: {
-          DEFAULT: '#070f1d',
-          light: '#0b1a30',
-          medium: '#102240',
-          surface: '#0c1424',
+          DEFAULT: '#1c232b', // darkened #212934 (real site navy)
+          light: '#262f39',
+          medium: '#303a45',
+          surface: '#171d24',
         },
         accent: {
-          DEFAULT: '#e63946',
-          dark: '#c92b38',
+          DEFAULT: '#ad750a', // darkened #c0830b (site gold/amber)
+          dark: '#94620a',    // darker gold for hover
         },
-        offwhite: '#f0f4f8',
-        lightgray: '#e2e8f0',
-        mediumgray: '#94a3b8',
-        darkgray: '#475569',
+        offwhite: '#f6f6f6', // real site light bg #f6f6f6
+        lightgray: '#ebeaea', // real site #ebeaea
+        mediumgray: '#747474', // real site #747474
+        darkgray: '#4a4e57',   // darkened #434c50
         ink: '#1e293b',
         textlight: '#cbd5e1',
         success: '#10b981',
-        warning: '#f59e0b',
+        warning: {
+          DEFAULT: '#f59e0b',
+          dark: '#d98207',
+        },
+        danger: '#ef4444',
       },
       fontFamily: {
         heading: ['var(--font-inter)', 'system-ui', 'sans-serif'],

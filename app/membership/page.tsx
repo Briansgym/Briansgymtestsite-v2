@@ -166,18 +166,18 @@ export default function MembershipPage() {
               <Reveal key={a.plan} delay={i * 100}>
                 <div
                   className={`relative flex h-full flex-col rounded-lg p-8 text-center shadow-lg ${
-                    a.featured ? 'bg-navy text-white ring-2 ring-accent' : 'border border-lightgray bg-white'
+                    a.featured ? 'bg-navy text-white ring-2 ring-warning' : 'border border-lightgray bg-white'
                   }`}
                 >
                   {a.featured ? (
-                    <span className="absolute -top-3 left-1/2 flex -translate-x-1/2 items-center gap-1 rounded-full bg-accent px-4 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                    <span className="absolute -top-3 left-1/2 flex -translate-x-1/2 items-center gap-1 rounded-full bg-warning px-4 py-1 text-xs font-bold uppercase tracking-wide text-white">
                       <Star className="h-3.5 w-3.5 fill-white" aria-hidden="true" /> Best Value
                     </span>
                   ) : null}
                   <h3 className={`font-heading text-xl font-bold ${a.featured ? 'text-white' : 'text-navy'}`}>
                     {a.plan}
                   </h3>
-                  <p className={`mt-4 font-heading text-5xl font-black ${a.featured ? 'text-accent' : 'text-primary'}`}>
+                  <p className={`mt-4 font-heading text-5xl font-black ${a.featured ? 'text-warning' : 'text-primary'}`}>
                     {a.price}
                     <span className="text-lg font-semibold">/yr</span>
                   </p>
@@ -217,7 +217,7 @@ export default function MembershipPage() {
             {discounts.map((d, i) => (
               <Reveal key={d} delay={i * 60}>
                 <div className="flex items-center gap-3 rounded-lg bg-white p-5 shadow-sm">
-                  <BadgePercent className="h-6 w-6 flex-shrink-0 text-accent" aria-hidden="true" />
+                  <BadgePercent className="h-6 w-6 flex-shrink-0 text-primary" aria-hidden="true" />
                   <span className="font-semibold text-navy">{d}</span>
                 </div>
               </Reveal>

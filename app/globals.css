@@ -3,18 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #1e5a99;
-  --color-primary-light: #2c79bf;
-  --color-primary-dark: #143d6b;
+  /* Palette = darkened versions of briansgym.com's real Avada palette. */
+  --color-primary: #1e5a99;        /* darkened #2c79bf brand blue */
+  --color-primary-light: #2c79bf;  /* real brand blue */
+  --color-primary-dark: #143d6b;   /* darkened #105378 deep blue */
   --color-primary-glow: rgba(30, 90, 153, 0.35);
 
-  --color-navy: #070f1d;
-  --color-navy-light: #0b1a30;
-  --color-navy-medium: #102240;
-  --color-dark-surface: #0c1424;
+  --color-navy: #1c232b;          /* darkened #212934 real site navy */
+  --color-navy-light: #262f39;
+  --color-navy-medium: #303a45;
+  --color-dark-surface: #171d24;
 
-  --color-accent: #e63946;
-  --color-accent-dark: #c92b38;
+  --color-accent: #ad750a;        /* darkened #c0830b site gold/amber */
+  --color-accent-dark: #94620a;   /* darker gold for hover */
+
+  --color-warning: #f59e0b;
+  --color-warning-dark: #d98207;
+  --color-danger: #ef4444;
 }
 
 html {
@@ -42,7 +47,7 @@ h6 {
 
 /* Focus visibility for accessibility */
 *:focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--color-primary);
   outline-offset: 2px;
 }
 
@@ -57,7 +62,7 @@ h6 {
   }
 
   .btn-primary {
-    @apply btn bg-accent text-white shadow-md hover:bg-accent-dark hover:shadow-lg hover:-translate-y-0.5;
+    @apply btn bg-primary text-white shadow-md hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .btn-secondary {
@@ -90,7 +95,7 @@ h6 {
   }
 
   .eyebrow {
-    @apply mb-3 inline-block text-sm font-bold uppercase tracking-[0.15em] text-accent;
+    @apply mb-3 inline-block text-sm font-bold uppercase tracking-[0.15em] text-primary;
   }
 
   /* Card with gradient top bar on hover */
@@ -101,7 +106,7 @@ h6 {
   .card::before {
     content: '';
     @apply absolute left-0 right-0 top-0 h-1 origin-left scale-x-0 transition-transform duration-[400ms] ease-smooth;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
   }
 
   .card:hover {
